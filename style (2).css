@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background: rgb(78, 130, 242);
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding: 20px 30px;
+}
+
+nav a{
+    margin-left:20px;
+    color:orange;
+    font-family: Tahoma;
+    text-decoration: none;
+}
+
+button{
+    margin-left: 30px;
+    font-family: Tahoma;
+    padding: 5px 10px;
+    border-radius: 30px;
+    background: seashell;
+    color:black ;
+    border:darkkhaki(112, 0, 139) 2px solid;
+}
+
+button:hover{
+    background:red; 
+    color:darkslategray;
+    cursor: pointer;
+}
+
+.susus123{
+    padding: 150px 50px;
+    background: url(imp.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+h1{
+    font-size: 50px;
+    color:rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+}
+
+.susus123 p{
+    color:rgb(0, 0, 0);
+    max-width: 50%;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Tahoma;
+}
+
+footer{
+    background:rgb(135, 109, 5);
+    padding: 30px 50px;
+    font-family: Tahoma;
+}
+.card img{
+    width: 70px;
+}
+
+.wrapper{
+    display:flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.card{
+    width: 30%;
+}
+
+.service{
+    padding: 50px;
+    background:darkslategray;
+    text-align: center;
+}
+
+.card h3{
+    color:forestgreen;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    color:rgb(0, 0, 0);
+    padding: 20px 0;
+}  
+
+@media(max-width:700px){
+    header{
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    nav{
+        margin-bottom: 20px;
+        text-align:center;
+    }
+    nav a{
+        margin: 0 10px;
+    }
+}
+    @media(max-width: 600px){
+        .wrapper{
+            flex-wrap: wrap;
+        }
+        .card{
+            width: 80%;
+            margin: 10px auto;
+    }
+    .susus123 p{
+        max-width: 80%;
+        margin:auto;
+        text-align:center;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .susus123{
+        padding: 50px 30px;
+    }
+    button{
+        margin-left: 0;
+    }
+    footer{
+        text-align: center;
+    }
+}
